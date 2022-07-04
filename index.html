@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="container">
+        <h2 class="logo">
+          SosMedia
+        </h2>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search for user, posts and projects">
+        </div>
+        <div class="create-btn">
+          <label for="#create-post" class="btn btn-primary">Create</label>
+          <div class="profile-picture">
+            <img src="assets/img/story/Cover_Volume_14.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <aside>
+        <a class="profile">
+          <div class="profile-picture">
+            <img src="assets/img/profile/img8.jpg" alt="">
+          </div>
+          <div class="text-profile">
+            <h4>Anggit</h4>
+            <p class="text-muted">
+              @anggit
+            </p>
+          </div>
+        </a>
+
+        <div class="sidebar-menu">
+          <a class="menu-item active">
+            <span><i class="fa-solid fa-house"></i></span>
+            <h3>Home</h3>
+          </a>
+          <a class="menu-item">
+            <i class="fa-solid fa-compass"></i>
+            <h3>Explore</h3>
+          </a>
+          <a class="menu-item" class="notifications" id="notifications">
+            <span><i class="fa-solid fa-bell"><small class="notification-number">9+</small></i></span>
+            <h3>Notification</h3>
+            <!-- Notification popup -->
+            <div class="notification-popup">
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img1.png" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Ying Tze</b> accepted your friend request
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Rara</b> replies your comment
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img3.png" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Putri Pratiwi</b> accepted your friend request
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img4.jpg" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Dita </b> follow on your post
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img5.jpg" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Rudi Firmansyah</b> like your post
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+              <div>
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img7.jpg" alt="">
+                </div>
+                <div class="notification-text">
+                  <b>Rendi Pratama</b> accepted ur friend request
+                  <small class="text-muted">Day Ago</small>
+                </div>
+              </div>
+            </div>
+            <!-- Notification popup end -->
+          </a>
+          <a class="menu-item" id="message-notifications">
+            <span><i class="fa-solid fa-envelope"><small class="notification-number">7</small></i></span>
+            <h3>Message</h3>
+          </a>
+          <a class="menu-item">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Analytics</h3>
+          </a>
+          <a class="menu-item" id="theme">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Theme</h3>
+          </a>
+          <a class="menu-item">
+            <span><i class="fa-solid fa-gear"></i></span>
+            <h3>Settings</h3>
+          </a>
+        </div>
+        <label for="#create-post" class="btn btn-primary">
+          Create Post
+        </label>
+      </aside>
+
+
+      <section class="middle">
+        <!-- Stories -->
+        <div class="stories">
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img1.png" alt="">
+            </div>
+            <p class="name">Your Story</p>
+          </div>
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img2.png" alt="">
+            </div>
+            <p class="name">Yun Tze</p>
+          </div>
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img3.png" alt="">
+            </div>
+            <p class="name">Rara</p>
+          </div>
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img4.jpg" alt="">
+            </div>
+            <p class="name">Venessa</p>
+          </div>
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img5.jpg" alt="">
+            </div>
+            <p class="name">Rendi</p>
+          </div>
+          <div class="story">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img7.jpg" alt="">
+            </div>
+            <p class="name">Sendhi</p>
+          </div>
+        </div>
+        <!-- End of Stories -->
+
+        <form class="create-post" action="">
+          <div class="profile-picture">
+            <img src="assets/img/profile/img1.png" alt="">
+          </div>
+          <input type="text" placeholder="Whats your story this day?" id="create-post">
+          <input type="submit" value="Post" class="btn btn-primary">
+        </form>
+
+        <!-- Feeds -->
+        <div class="feeds">
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Yun Tze</h3>
+                  <small>Shanghai, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/AyoDance_1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Yun Tze </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Yun Tze </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Audience</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img3.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Kato Megumi</h3>
+                  <small>Tokyo, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/ESL-CommunityCup_KV_Final.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Ikhsan </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Kato Megumi </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Game</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img4.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3>Ilham</h3>
+                  <small>Jakarta, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/Final-Fantasy-XVI-logo-feature-Naoki-YOshida-ds1-1340x1340-1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Salsa </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Ilham </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#FFIV</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Yun Tze</h3>
+                  <small>Shanghai, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/AyoDance_1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Yun Tze </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Yun Tze </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Audience</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Yun Tze</h3>
+                  <small>Shanghai, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/AyoDance_1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Yun Tze </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Yun Tze </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Audience</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Yun Tze</h3>
+                  <small>Shanghai, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/AyoDance_1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Yun Tze </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Yun Tze </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Audience</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-picture">
+                  <img src="assets/img/profile/img2.png" alt="">
+                </div>
+                <div class="info">
+                  <h3>Yun Tze</h3>
+                  <small>Shanghai, 30 Minute Ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </div>
+            <div class="feed-picture">
+              <img src="assets/img/AyoDance_1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-comment-dots"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="fa-solid fa-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span>
+                <img src="assets/img/profile/img1.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img2.png" alt="">
+              </span>
+              <span>
+                <img src="assets/img/profile/img3.png" alt="">
+              </span>
+              <p>liked by <b>Yun Tze </b> and <b>223 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Yun Tze </b>bLorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quia! <span
+                  class="hash-tag">#Audience</span></p>
+            </div>
+            <div class="comments text-muted">View all 100 comments</div>
+          </div>
+        </div>
+        <!-- Feeds ends -->
+      </section>
+
+      <!-- Right -->
+      <section class="right">
+        <div class="messages">
+          <div class="heading">
+            <h4>Messages</h4>
+            <i class="fa-solid fa-edit"></i>
+          </div>
+          <!-- Search Bar -->
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="message-search" placeholder="Search message">
+          </div>
+          <div class="message-category">
+            <h6 class="active">Primary</h6>
+            <h6>General</h6>
+            <h6 class="message-requests">Requests(7)</h6>
+          </div>
+          <!-- Message -->
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img8.jpg" alt="">
+            </div>
+            <div class="message-body">
+              <h5>Rendhi</h5>
+              <p class="text-muted">Just woke up</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img5.jpg" alt="">
+            </div>
+            <div class="message-body">
+              <h5>Budi</h5>
+              <p class="text-bold">hmm..</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img2.png" alt="">
+            </div>
+            <div class="message-body">
+              <h5>Yun Tze</h5>
+              <p class="text-muted">sry..</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img4.jpg" alt="">
+              <div class="active"></div>
+            </div>
+            <div class="message-body">
+              <h5>Rita</h5>
+              <p class="text-bold">no problem</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img1.png" alt="">
+            </div>
+            <div class="message-body">
+              <h5>Vania</h5>
+              <p class="text-bold">no problem</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="profile-picture">
+              <img src="assets/img/profile/img6 (1).jpg" alt="">
+              <div class="active"></div>
+            </div>
+            <div class="message-body">
+              <h5>Ilham</h5>
+              <p class="text-bold">no problem</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Friend Request -->
+        <div class="friend-requests">
+          <h4>Requests</h4>
+          <div class="request">
+            <div class="info">
+              <div class="profile-picture">
+                <img src="assets/img/profile/img6 (1).jpg" alt="">
+              </div>
+              <div>
+                <h5>Budimus</h5>
+                <p class="text-muted">
+                  5 mutual friends
+                </p>
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Decline</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="info">
+              <div class="profile-picture">
+                <img src="assets/img/profile/img4.jpg" alt="">
+              </div>
+              <div>
+                <h5>Budimus</h5>
+                <p class="text-muted">
+                  5 mutual friends
+                </p>
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Decline</button>
+            </div>
+          </div>
+          <div class="request">
+            <div class="info">
+              <div class="profile-picture">
+                <img src="assets/img/profile/img3.png" alt="">
+              </div>
+              <div>
+                <h5>Budimus</h5>
+                <p class="text-muted">
+                  5 mutual friends
+                </p>
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn btn-primary">Accept</button>
+              <button class="btn">Decline</button>
+            </div>
+          </div>
+        </div>
+        <!-- Friend Request end -->
+      </section>
+      <!-- End of right -->
+    </div>
+  </main>
+  <!-- End of Main -->
+
+  <!-- Theme Customization -->
+  <div class="customize-theme">
+    <div class="card">
+      <h2>Customizee your view</h2>
+      <p class="text-muted">Manage your font size, color, and background</p>
+      <!-- Font size -->
+      <div class="font-size">
+        <h4>Font size</h4>
+        <div>
+          <h6>Aa</h6>
+          <div class="choose-size">
+            <span class="font-size-1"></span>
+            <span class="font-size-2 active"></span>
+            <span class="font-size-3"></span>
+            <span class="font-size-4"></span>
+            <span class="font-size-5"></span>
+          </div>
+          <h3>Aa</h3>
+        </div>
+      </div>
+
+      <!-- Primary color -->
+      <div class="color">
+        <h4>Color</h4>
+        <div class="choose-color">
+          <span class="color-1 active"></span>
+          <span class="color-2"></span>
+          <span class="color-3"></span>
+          <span class="color-4"></span>
+          <span class="color-5"></span>
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div class="background">
+        <h4>Background</h4>
+        <div class="choose-bg">
+          <div class="bg-1 active">
+            <span></span>
+            <h5 for="bg-1">Light</h5>
+          </div>
+          <div class="bg-2">
+            <span></span>
+            <h5>Dim</h5>
+          </div>
+          <div class="bg-3">
+            <span></span>
+            <h5 for="bg-3">Lights Out</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
