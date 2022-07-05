@@ -1,12 +1,17 @@
 :root {
-  --dark-color: hsl(252, 30%, 17%);
-  --light-color: hsl(252, 30%, 95%);
-  --gray-color: hsl(252, 15%, 65%);
-  --primary-color: hsl(252, 75%, 60%);
+  --hue-primary-color: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+
+  --dark-color: hsl(252, 30%, var(--dark-color-lightness));
+  --light-color: hsl(252, 30%, var(--light-color-lightness));
+  --gray-color: hsl(var(--hue-primary-color), 15%, 65%);
+  --primary-color: hsl(var(--hue-primary-color), 75%, 60%);
   --secondary-color: hsl(252, 100%, 90%);
   --success-color: hsl(120, 95%, 65%);
   --danger-color: hsl(0, 95%, 65%);
-  --white-color: hsl(252, 30%, 100%);
+  --white-color: hsl(252, 30%, var(--white-color-lightness));
   --black-color: hsl(252, 30%, 10%);
 
   --border-radius: 2rem;
@@ -18,7 +23,6 @@
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
 }
-
 
 *,
 *::before,
